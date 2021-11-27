@@ -23,3 +23,45 @@ This project leverages python 3.7 with the following packages:
 
 **[Matplotlib Library](https://matplotlib.org/)** - Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python.<br>
 
+---
+
+## Installation and Usage Guide
+
+Before running the application first install the following dependencies:
+
+In this application, you’ll use charts with hvPlot and use the Facebook Prophet library (Links to an external site.) to analyze time series data.
+
+The Facebook Prophet library can be difficult to install on some machines, so for this application you'll also get aquainted with Google Colab - an IDE that allows you to run Jupyter Notebooks in the cloud. Before beginning running the application, take a moment to follow the directions on how to open a notebook in Google Colab, install the necessary libraries and import data.
+
+Step 1: Open a new notebook in Google Colab: https://colab.research.google.com/<br>
+
+Step 2: Install the reqired libraries:
+
+```python
+from IPython.display import clear_output
+try:
+  !pip install pystan
+  !pip install fbprophet
+  !pip install hvplot
+  !pip install holoviews
+except:
+  print("Error installing libraries")
+finally:
+  clear_output()
+  print('Libraries successfully installed')
+```
+
+Step 3: Import the required libraries:
+
+```python
+import pandas as pd
+import holoviews as hv
+from fbprophet import Prophet
+import hvplot.pandas
+import datetime as dt
+%matplotlib inline
+```
+
+Step 4: Read the search data into a DataFrame, and then slice the data to just the month of May 2020. Use hvPlot to visualize the results (May 2020):
+
+![May 2020 Trends](may_plot.png)
