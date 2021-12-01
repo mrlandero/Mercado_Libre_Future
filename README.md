@@ -103,4 +103,34 @@ Step 10: Use hvPlot to visualize the close and Search Trends data:
 
 Stacking these plots will give us a great idea of the relationship between Google Search Trends and Closing Stock Prices. 
 
-Step 11: 
+Step 11: Create a new column on the `mercado_stock_trends_df` and plot this volatility:
+
+![Stock Volatility](volatility_plot.png)
+
+Step 12: Review the correlation between the 3 new features added to our DataFrame ("Lagged Search Trends", "Stock Volatility, "Hourly Stock Return"):
+
+![Correlation Table](corr_table.png)
+
+Step 13: Set up and run a Facebook Prophet Model on our search trend data:
+
+![Facebook Prophet Model](fb_prophet_df.png)
+
+Step 14: Plot the FB Prophet Model forecast:
+
+![Facebook Prophet Model Plot](fb_prophet_plot.png)
+
+This plot, all the way to the right, where the data points stop, lets us know that for the forecasted time, the model is predicting a decline in traffic for Mercado Libre.
+
+Step 15: Plot the specific components from the FB Prophet Model predictions:
+
+![Facebook Prophet Components Plot](components_plot.png)
+
+This plot allows us to look closer at the overall trends, as well as the trend by Day of the Week.
+
+Step 16: Set up and run a Facebook Prophet Model on our sales revenue data:
+
+![Facebook Prophet Revenue Model](fb_prophet_revenue.png)
+
+Step 17: Plot the components of the FB Prophet Model for overall trend and by sales revenue by day of the week:
+
+![Facebook Prophet Plot Components Revenue](revenue_components.png)
