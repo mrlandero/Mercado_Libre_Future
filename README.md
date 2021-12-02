@@ -123,7 +123,7 @@ This plot, all the way to the right, where the data points stop, lets us know th
 
 Step 15: Plot the specific components from the FB Prophet Model predictions:
 
-![Facebook Prophet Components Plot](components_plot.png)
+![Facebook Prophet Components Plot](component_plot.png)
 
 This plot allows us to look closer at the overall trends, as well as the trend by Day of the Week.
 
@@ -134,3 +134,12 @@ Step 16: Set up and run a Facebook Prophet Model on our sales revenue data:
 Step 17: Plot the components of the FB Prophet Model for overall trend and by sales revenue by day of the week:
 
 ![Facebook Prophet Plot Components Revenue](revenue_components.png)
+
+From the plot we can tell that Wednesday is the best day for Mercado Libre in terms of sales.
+
+Step 18: Display the forecasted scenarios for the Mercado Libre executives: Most Likely, Worst-Case, and Best-Case sales scenarios:
+
+![Likely Sales Forecasts](likely_scenario.png)
+
+This table informs us of the most likely sales figures, the worst-case, and best-case scenario sales figures. 
+
