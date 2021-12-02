@@ -143,3 +143,9 @@ Step 18: Display the forecasted scenarios for the Mercado Libre executives: Most
 
 This table informs us of the most likely sales figures, the worst-case, and best-case scenario sales figures. 
 
+---
+
+## Contributors
+
+**Created by:** Tony Landero<br>
+**Email Adress:** mr.landero@gmail.com
